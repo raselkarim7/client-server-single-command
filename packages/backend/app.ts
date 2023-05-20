@@ -1,5 +1,6 @@
-const express = require('express')
-const app = express()
+import express from 'express'
+const app: express.Application = express();
+
 const cors = require('cors')
 const tasksRoutes = require('./routes/tasks')
 
@@ -17,7 +18,7 @@ app.use(cors({
 
 // Routes
 app.get('/hello', (req, res) => {
-    res.send('Task Manager app')
+    res.send('Hello Pageeeee, I can see you');
 })
 app.use('/api/v1/tasks', tasksRoutes)
 
