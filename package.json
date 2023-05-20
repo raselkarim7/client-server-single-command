@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "concurrently": "^8.0.1"
+  },
+  "name": "client-server-single-command",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd packages/frontend && npm start",
+    "server": "cd packages/backend && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+    }
+}
